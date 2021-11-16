@@ -1,4 +1,4 @@
-package singletonProject;
+package singletonProject.singleton;
 
 public class Persona {
 
