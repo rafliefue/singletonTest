@@ -1,5 +1,8 @@
 package singletonProject;
 
+import singletonProject.builder.PersonaB;
+import singletonProject.singleton.Persona;
+
 public class Main {
 	
 	public static void main(String args[]) {
@@ -15,7 +18,11 @@ public class Main {
         System.out.println("Nombre de b: " + b.getNombre());
         System.out.println("Nombre de c: " + c.getNombre());
  
-  
+        //----------------------
+        
+        PersonaB persona = new PersonaB.PersonaBuilder("Jose").build();
+        
+        System.out.println(persona.getNombre());
 
     }
 }
