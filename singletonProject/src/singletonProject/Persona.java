@@ -2,7 +2,7 @@ package singletonProject;
 
 public class Persona {
 
-	private static Persona single_instance = null;
+	private static Persona single_instance;
 	
 	private String nombre;
 	
@@ -10,17 +10,13 @@ public class Persona {
 		return nombre;
 	}
 
-	public void setNombre(String nombre) {
+	public Persona(String nombre) {
 		this.nombre = nombre;
 	}
-
-	public Persona() {
-		nombre = "Pepe";
-	}
 	
-	public static Persona getInstance() {
+	public static Persona getInstance(String nombre) {
 		if (single_instance == null){
-			single_instance = new Persona();
+			single_instance = new Persona(nombre);
 		}
 			return single_instance;
 		

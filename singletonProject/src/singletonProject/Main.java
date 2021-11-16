@@ -4,11 +4,11 @@ public class Main {
 	
 	public static void main(String args[]) {
 
-        Persona a = Persona.getInstance();
+        Persona a = Persona.getInstance("pedro");
 
-        Persona b = Persona.getInstance();
+        Persona b = Persona.getInstance("jose");
  
-        Persona c = Persona.getInstance();
+        Persona c = Persona.getInstance("pepe");
  
         
         System.out.println("Nombre de a: " + a.getNombre());
